@@ -1,85 +1,150 @@
-# Tasvirul Hasan Riyad - Personal Portfolio
+# Portfolio Riyad - Tasvirul Hasan Riyad
 
-A sleek, modern, and fully responsive personal developer portfolio website built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**.
-
----
-
-## ✨ Features
-
-- **Dynamic Hero & Introduction**: Animated welcome banner with downloadable resume button and direct navigation.
-- **Splash Signature Animation**: Custom SVG vector path stroke drawing animation that seamlessly reveals on first load.
-- **Infinite Skills Marquee**: Smooth, auto-scrolling skill carousel with authentic brand icons (Next.js, React, Tailwind CSS, PostgreSQL, Canva, C/C++, Java, MS Suite, and more).
-- **Interactive Competencies**: Interactive soft skill chips with micro-animations and feedback effects.
-- **Featured Projects**: Showcase cards with live GitHub repository links and descriptions.
-- **Education & Experience**: Clean chronological timeline highlighting academic milestones at North South University and collegiate backgrounds.
-- **Let's Connect & Socials**: Responsive contact panel with one-click direct email compose, phone call links, and social links (GitHub, LinkedIn, Instagram, Facebook).
-- **Theme Switcher**: Smooth Dark and Light mode toggling with persistent state and fluid color transitions.
-- **Fully Responsive**: Scaled fluidly for all viewports from 320px mobile displays up to 4K monitors.
+A personal developer portfolio website built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**. It showcases academic accomplishments, software engineering projects, technical and soft skills, and comprehensive contact channels with a dynamic dark/light interface.
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Project Overview
 
-- **Framework**: [Next.js 16](https://nextjs.org/) (Turbopack, App Router)
-- **Library**: [React 19](https://react.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & Vanilla CSS design tokens
-- **Icons**: [Lucide React](https://lucide.dev/) & Hand-crafted SVG vectors
-- **Fonts**: [Google Fonts](https://fonts.google.com/) (`Audiowide`, `Italianno`, `Quicksand`, `Geist`)
+This portfolio serves as the central digital showcase for **Tasvirul Hasan Riyad**, an undergraduate student in Computer Science & Engineering at **North South University (NSU)**.
+
+### Key Highlights
+- **Interactive Signature Splash Screen**: Animated SVG vector stroke drawing simulation that renders on initial load before transitioning smoothly to the main site.
+- **Infinite Skills Marquee**: Auto-scrolling carousel showcasing authentic brand vector icons for programming languages and tools (C, C++, Java, SQL, PostgreSQL, HTML5, CSS3, Canva, Google Docs, MS Word, PowerPoint, Excel).
+- **Core Competencies & Soft Skills**: Interactive pill badge grid with engaging click animations and tactile feedback.
+- **Featured Projects**:
+  - **Apartment Management System**: Full-stack desktop application developed in Java and MySQL for building tenant and facility management.
+  - **Classroom Booking System (CBS / CSE_299_NSU)**: University role-based room allocation and scheduling platform built with HTML, CSS, JavaScript, and PostgreSQL.
+- **Education & Experience Timeline**: Structured, responsive timeline featuring North South University and Chattogram Cantonment Public College with institution crests.
+- **Direct Connect & Social Hub**: Contact grid with one-click direct email compose (`tasvirriyad@gmail.com` and university email), mobile call trigger, location indicator, and authentic SVG social links (LinkedIn, GitHub, Instagram, Facebook).
+- **Dark & Light Mode**: Seamless theme switching with persistent user preference storage in `localStorage`.
+- **Fully Responsive**: Fluid scaling and typography across mobile phones (320px+), tablets, laptops, and ultra-wide desktop monitors.
 
 ---
 
-## 🚀 Getting Started Locally
+## 🛠️ Technology Stack
+
+| Domain | Technology |
+| :--- | :--- |
+| **Framework** | [Next.js 16](https://nextjs.org/) (App Router, Turbopack) |
+| **UI Library** | [React 19](https://react.dev/) |
+| **Language** | [TypeScript 5](https://www.typescriptlang.org/) |
+| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) & Vanilla CSS custom properties |
+| **Iconography** | [Lucide React](https://lucide.dev/) & Hand-crafted SVG Vectors |
+| **Typography** | [Google Fonts](https://fonts.google.com/) (`Audiowide`, `Italianno`, `Quicksand`, `Geist`) |
+| **Linting & Code Quality** | [ESLint 9](https://eslint.org/) |
+
+---
+
+## 📂 Project Structure
+
+```text
+portfolio/
+├── app/
+│   ├── favicon.ico          # Browser tab favicon
+│   ├── globals.css          # Theme tokens, custom animations, fluid styles
+│   ├── layout.tsx           # Root layout, Google Fonts, OpenGraph metadata
+│   └── page.tsx             # Main single-page application entry point
+├── components/
+│   ├── Connect.tsx          # Contact section, emails, phone, social links
+│   ├── Education.tsx        # Academic history & certificates
+│   ├── Experience.tsx       # Leadership & extracurricular activities
+│   ├── Footer.tsx           # Copyright notice & back-to-top anchor
+│   ├── Hero.tsx             # Welcome banner, profile photo, resume download
+│   ├── Navbar.tsx           # Floating navigation bar & active section indicator
+│   ├── Projects.tsx         # Featured project cards with repository links
+│   ├── SkillIcons.tsx       # Handcrafted brand SVGs for all technical skills
+│   ├── Skills.tsx           # Marquee carousel & interactive competencies
+│   ├── SplashSignature.tsx  # Signature SVG stroke animation
+│   ├── ThemeContext.tsx     # React context provider for dark/light themes
+│   ├── ThemeToggle.tsx      # Sun/moon theme switcher button
+│   └── signatureData.ts     # SVG vector paths for the signature animation
+├── data/
+│   └── portfolioData.ts     # Centralized portfolio data (profile, projects, skills, contacts)
+├── public/
+│   ├── images/
+│   │   ├── education/       # University and college logos
+│   │   ├── projects/        # Project preview screenshots
+│   │   ├── skills/          # Skill brand vector assets
+│   │   ├── socials/         # GitHub, LinkedIn, Instagram, Facebook vectors
+│   │   └── profile.jpg      # Profile photograph
+│   └── resume.pdf           # Downloadable curriculum vitae / resume
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to run the project locally on your machine.
 
 ### Prerequisites
 
-Ensure you have [Node.js](https://nodejs.org/) installed (version 18+ or 20+ recommended).
+Ensure you have installed:
+- **Node.js**: `v18.18.0` or higher (`v20.x` or `v22.x` recommended). Verify with:
+  ```bash
+  node -v
+  ```
+- **npm** (comes with Node.js) or **pnpm** / **yarn**.
 
-### 1. Clone the repository
+---
+
+### Installation & Execution
+
+#### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/tasvir-riyad/Portfolio-Riyad.git
+cd Portfolio-Riyad
 ```
 
-### 2. Install dependencies
+#### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 3. Run the development server
+#### 3. Start the development server
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) (or the port indicated in your terminal) in your browser.
+The application will start with Turbopack. Open [http://localhost:3000](http://localhost:3000) (or the port specified in terminal) in your browser.
 
 ---
 
-## 📦 Scripts
+### Available Scripts
 
-- `npm run dev` - Starts the development server with Turbopack.
-- `npm run build` - Creates an optimized production build.
-- `npm run start` - Starts the production server.
-- `npm run lint` - Runs ESLint to check for code quality and style issues.
+- **`npm run dev`**: Starts local development server with Turbopack fast refresh.
+- **`npm run build`**: Compiles and builds the production-ready static bundle.
+- **`npm run start`**: Runs the built production server locally.
+- **`npm run lint`**: Executes ESLint to check for code consistency and errors.
 
 ---
 
 ## 🌐 Deploy to Vercel
 
-The portfolio is zero-config ready for instant deployment on [Vercel](https://vercel.com/):
+This Next.js application requires zero custom configuration for Vercel deployment:
 
-1. Push your repository to **GitHub**.
-2. Go to [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New Project"**.
-3. Import your GitHub portfolio repository.
-4. Keep the default settings:
-   - **Framework Preset**: Next.js
+1. Push this repository to your GitHub account (`tasvir-riyad/Portfolio-Riyad`).
+2. Go to the [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New Project"**.
+3. Import `Portfolio-Riyad` from your GitHub repositories.
+4. Keep the default build settings:
+   - **Framework Preset**: `Next.js`
    - **Build Command**: `next build`
    - **Output Directory**: `.next`
    - **Install Command**: `npm install`
-5. Click **Deploy**!
+5. Click **Deploy**. Vercel will build and publish your portfolio with automatic SSL certificates and global CDN caching.
 
 ---
 
-## 📄 License
+## 👤 Author
 
-This project is open source and available under the [MIT License](LICENSE).
+**Tasvirul Hasan Riyad**  
+*Undergraduate Student in Computer Science & Engineering*  
+*North South University, Dhaka, Bangladesh*
+
+- **GitHub**: [@tasvir-riyad](https://github.com/tasvir-riyad)
+- **LinkedIn**: [Tasvirul Hasan Riyad](https://www.linkedin.com/in/tasvir-riyad)
+- **Email**: [tasvirriyad@gmail.com](mailto:tasvirriyad@gmail.com)
+- **Instagram**: [@riyad_naldo](https://www.instagram.com/riyad_naldo/)
