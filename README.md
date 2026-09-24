@@ -138,13 +138,4 @@ This Next.js application requires zero custom configuration for Vercel deploymen
 
 ---
 
-## 👤 Author
 
-**Tasvirul Hasan Riyad**  
-*Undergraduate Student in Computer Science & Engineering*  
-*North South University, Dhaka, Bangladesh*
-
-- **GitHub**: [@tasvir-riyad](https://github.com/tasvir-riyad)
-- **LinkedIn**: [Tasvirul Hasan Riyad](https://www.linkedin.com/in/tasvir-riyad)
-- **Email**: [tasvirriyad@gmail.com](mailto:tasvirriyad@gmail.com)
-- **Instagram**: [@riyad_naldo](https://www.instagram.com/riyad_naldo/)
