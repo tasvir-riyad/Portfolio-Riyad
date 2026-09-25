@@ -122,20 +122,6 @@ The application will start with Turbopack. Open [http://localhost:3000](http://l
 
 ---
 
-## 🌐 Deploy to Vercel
 
-This Next.js application requires zero custom configuration for Vercel deployment:
-
-1. Push this repository to your GitHub account (`tasvir-riyad/Portfolio-Riyad`).
-2. Go to the [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New Project"**.
-3. Import `Portfolio-Riyad` from your GitHub repositories.
-4. Keep the default build settings:
-   - **Framework Preset**: `Next.js`
-   - **Build Command**: `next build`
-   - **Output Directory**: `.next`
-   - **Install Command**: `npm install`
-5. Click **Deploy**. Vercel will build and publish your portfolio with automatic SSL certificates and global CDN caching.
-
----
 
 
