@@ -1,6 +1,6 @@
 # Portfolio Riyad - Tasvirul Hasan Riyad
 
-A personal developer portfolio website built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**. It showcases academic accomplishments, software engineering projects, technical and soft skills, and comprehensive contact channels with a dynamic dark/light interface.
+A personal portfolio website built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**. It showcases academic accomplishments, software engineering projects, technical and soft skills, and comprehensive contact channels with a dynamic dark/light interface.
 
 ---
 
